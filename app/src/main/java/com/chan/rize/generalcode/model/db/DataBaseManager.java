@@ -1,14 +1,19 @@
 package com.chan.rize.generalcode.model.db;
 
+import android.os.Handler;
+
 /**
- * Created by Weconex_NJ_01 on 2018/2/8.
+ * Created by rize on 2018/2/8.
  */
 
 public final class DataBaseManager {
 
-    volatile private static DataBaseManager mDBManager;
+    volatile private static DataBaseManager mDBManager = null;
+
+    Handler mHandler = null;
 
     private DataBaseManager() {
+
     }
 
     public static DataBaseManager getInstance() {

@@ -3,9 +3,8 @@ package com.chan.rize.generalcode.utils;
 import android.util.Log;
 
 /**
- * Created by Weconex_NJ_01 on 2018/2/8.
+ * Created by rize on 2018/2/8.
  */
-
 public class LogUtil {
 
     private static final String APP_TAG = "application_name";

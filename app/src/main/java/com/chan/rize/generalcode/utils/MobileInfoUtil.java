@@ -4,7 +4,7 @@ import android.content.Context;
 import android.telephony.TelephonyManager;
 
 /**
- * Created by Weconex_NJ_01 on 2018/2/8.
+ * Created by rize on 2018/2/8.
  */
 
 public class MobileInfoUtil {

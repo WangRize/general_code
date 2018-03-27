@@ -19,7 +19,7 @@ public class MobileInfoUtil {
     // 未取到
     public static final int PHONE_TYPE_UNKNOW = -1;
 
-    private int getNFCType(Context context) {
+    private int getPhoneType(Context context) {
         int phoneType = PHONE_TYPE_UNKNOW;
         TelephonyManager telManager = (TelephonyManager) context.getApplicationContext().getSystemService(Context.TELEPHONY_SERVICE);
 

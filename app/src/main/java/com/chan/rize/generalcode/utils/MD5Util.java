@@ -2,7 +2,7 @@ package com.chan.rize.generalcode.utils;
 
 import java.security.MessageDigest;
 
-public class CryptUtil {
+public class MD5Util {
 
     private static final String DEFAULT_STRING = "";
 

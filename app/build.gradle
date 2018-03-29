@@ -1,11 +1,8 @@
 apply plugin: 'com.android.application'
 
-logger.info("hello, welcome to build.gradle")
 android {
-    logger.lifecycle("hello, welcome to func android")
     compileSdkVersion 26
     defaultConfig {
-        logger.debug("hello, welcome to func defaultConfig")
         applicationId "com.chan.rize.generalcode"
         minSdkVersion 15
         targetSdkVersion 26
@@ -17,7 +14,6 @@ android {
         buildConfigField("String", "var", "\"string\"")
     }
     buildTypes {
-        println("hello, welcome to func buildTypes")
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -26,8 +22,7 @@ android {
 }
 
 dependencies {
-    println("hello, welcome to func dependencies")
-    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'

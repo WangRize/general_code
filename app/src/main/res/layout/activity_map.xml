@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/map_layout_search"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/shape_search_edittext"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_sousu_huise"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="请输入您的目的地"
+            android:textSize="15sp"
+            android:textColorHint="#999999" />
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/icon_sousu_list" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="142dp"
+        android:layout_marginStart="24dp"
+        android:layout_toLeftOf="@+id/map_layout_search"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/icon_locking" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:clickable="true" />
+</RelativeLayout>

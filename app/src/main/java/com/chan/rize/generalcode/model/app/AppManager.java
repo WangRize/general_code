@@ -15,6 +15,7 @@ public class AppManager extends Application {
     synchronized public static Context getAppContext() {
         return mContext.getApplicationContext();
     }
+
     @Override
     public void onCreate() {
         super.onCreate();

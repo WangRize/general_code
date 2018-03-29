@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class SQLiteHelper extends SQLiteOpenHelper {
 
     public SQLiteHelper(Context context) {
-         // null 默认的游标工厂
+        // null 默认的游标工厂
         super(context, DataBaseConst.DB_NAME, null, DataBaseConst.DB_VERSION);
     }
 

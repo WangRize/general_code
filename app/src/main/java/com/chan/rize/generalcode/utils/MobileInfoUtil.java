@@ -8,8 +8,6 @@ import android.telephony.TelephonyManager;
  */
 
 public class MobileInfoUtil {
-    private static final String TAG = "MobileInfoUtil";
-
     // 移动
     public static final int PHONE_TYPE_CMCC = 10086;
     // 电信
@@ -18,6 +16,7 @@ public class MobileInfoUtil {
     public static final int PHONE_TYPE_CUCC = 10010;
     // 未取到
     public static final int PHONE_TYPE_UNKNOW = -1;
+    private static final String TAG = "MobileInfoUtil";
 
     private int getPhoneType(Context context) {
         int phoneType = PHONE_TYPE_UNKNOW;
@@ -26,16 +25,16 @@ public class MobileInfoUtil {
         String operator = telManager.getSimOperator();
         LogUtil.i(TAG, "system sim info : " + operator);
         String simOperator = null;
-        if(operator!= null){
-            if(operator.equals("46000") || operator.equals("46002")|| operator.equals("46007")){
+        if (operator != null) {
+            if (operator.equals("46000") || operator.equals("46002") || operator.equals("46007")) {
                 // 中国移动
                 simOperator = "中国移动";
                 phoneType = PHONE_TYPE_CMCC;
-            }else if(operator.equals("46001")){
+            } else if (operator.equals("46001")) {
                 // 中国联通
                 simOperator = "中国联通";
                 phoneType = PHONE_TYPE_CUCC;
-            }else if(operator.equals("46003")){
+            } else if (operator.equals("46003")) {
                 // 中国电信
                 simOperator = "中国电信";
                 phoneType = PHONE_TYPE_CTCC;

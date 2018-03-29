@@ -1,12 +1,9 @@
 package com.chan.rize.generalcode.view.main;
 
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.chan.rize.generalcode.R;
-
-import java.lang.ref.WeakReference;
 
 public class MainActivity extends FragmentActivity {
 

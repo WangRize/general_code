@@ -17,6 +17,7 @@ public class BaseResponse {
     public int getStatus() {
         return status;
     }
+
     public void setStatus(int status) {
         this.status = status;
     }
@@ -24,6 +25,7 @@ public class BaseResponse {
     public String getResponseCode() {
         return responseCode;
     }
+
     public void setResponseCode(String responseCode) {
         this.responseCode = responseCode;
     }
@@ -31,6 +33,7 @@ public class BaseResponse {
     public String getResponseDesc() {
         return responseDesc;
     }
+
     public void setResponseDesc(String responseDesc) {
         this.responseDesc = responseDesc;
     }

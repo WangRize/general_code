@@ -25,8 +25,8 @@ import java.util.List;
  */
 public class DrivingRouteOverlay extends OverlayManager {
 
-    private DrivingRouteLine mRouteLine = null;
     boolean focus = false;
+    private DrivingRouteLine mRouteLine = null;
 
     /**
      * 构造函数

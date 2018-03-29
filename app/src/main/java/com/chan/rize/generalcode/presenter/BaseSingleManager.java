@@ -14,11 +14,11 @@ import java.util.Map;
 
 public class BaseSingleManager {
 
+    private static BaseSingleManager mManager;
     private Context mContext;
     private Handler mLogicHandler;
     private Handler mUIHandler;
     private Map<String, Callback2UI> mCodeCallbackMap;
-    private static BaseSingleManager mManager;
 
     protected BaseSingleManager(Context context) {
         mContext = context;
@@ -50,9 +50,11 @@ public class BaseSingleManager {
         return mManager;
     }
 
-    protected void doDispatchMessage(Message msg) {}
+    protected void doDispatchMessage(Message msg) {
+    }
 
-    protected void dispatchMessage2UI(Message msg) {}
+    protected void dispatchMessage2UI(Message msg) {
+    }
 
     public void releaseResources() {
         if (null != mLogicHandler) {

@@ -22,8 +22,8 @@ import java.util.List;
 
 public class IndoorRouteOverlay extends OverlayManager {
 
-    private IndoorRouteLine mRouteLine;
     int[] colorInfo;
+    private IndoorRouteLine mRouteLine;
 
     /**
      * 构造函数

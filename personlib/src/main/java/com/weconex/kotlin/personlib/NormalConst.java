@@ -6,7 +6,7 @@ package com.weconex.kotlin.personlib;
 
 public class NormalConst {
 
-    public enum 四季 {春, 夏,}
+    public enum 四季 {春, 夏, 秋, 冬}
 
     public enum 时辰 {子, 丑, 寅, 卯, 辰, 巳, 午, 未, 申, 酉, 戌, 亥}
 
@@ -74,5 +74,7 @@ public class NormalConst {
         中注, 肓俞, 商曲, 石关, 阴都, 腹通谷, 幽门, 步廊, 神封, 灵墟, 神藏, 彧中, 俞府
     }
 
+    public enum 五脏 {心, 肝, 脾, 肺, 肾}
 
+    public enum 六腑 {胃, 大肠, 小肠, 三焦, 膀胱, 胆}
 }
